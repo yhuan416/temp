@@ -1,3 +1,13 @@
+/**
+ * @file 1.c
+ * @author yhuan (yhuan416@foxmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2024-02-18
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include <stdio.h>
 
 #include "1.h"
@@ -5,6 +15,13 @@
 void normal_counter_initiaize(struct counter_t *self, int initial_value);
 void skip_counter_initialize(struct counter_t *self, int initial_value);
 
+/**
+ * @brief increase
+ * 
+ * @param c 
+ * @param prefix 用于打印输出
+ * @return int 
+ */
 int increase(struct counter_i **c, const char *prefix)
 {
     int r;
