@@ -1,0 +1,25 @@
+# Copyright 2014 The Chromium Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+executable("croutine") {
+  sources = [ "croutine.c" ]
+  output_name = "croutine"
+}
+
+executable("counter") {
+  sources = [
+    "1.c",
+    "normal_counter.c",
+    "skip_counter.c",
+  ]
+  output_name = "counter"
+}
+
+action("hello") {
+    script = "hello.py"
+    outputs = [ "$target_gen_dir/output.txt" ]  # 指定脚本的输出文件路径
+    # 如果需要传递参数给脚本，可以在args列表中添加参数
+    args = [
+
+    ]
+}
